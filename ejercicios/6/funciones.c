@@ -3,11 +3,16 @@
 
 //Pre: Entra una letra
 //Post: Devolver un 1 si la letra es una letra 'a'. Si no, devolver 0.
-tipo_de_dato es_una_A(char letra)
+int es_una_A(char letra)
 {
+	int solucion = 0;
+	
+	if (letra == 'a' || letra == 'A')
+		solucion = 1;
+	return solucion;
 }
 
-tipo_de_dato main()
+int main()
 {
 	int i;
 	char cadena[40] = "Hola dola pepsi cola\n";

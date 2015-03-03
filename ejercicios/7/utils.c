@@ -7,8 +7,17 @@
  */
 
 /* Zona para incluir las bibliotecas o cabeceras */
-
+#include "utils.h"
 
 
 
 /* Declaracion de la funcion */
+int es_par(int numero)
+{
+	int par = 0;
+	
+	if (numero % 2 == 0)
+		par = 1;
+	
+	return par;
+}

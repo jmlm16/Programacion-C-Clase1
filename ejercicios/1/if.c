@@ -4,9 +4,17 @@
  */
 
 /* Bibliotecas a incluir */
+#include <stdio.h>
 
-void main () {
+void main(void)
+{
 	/* Declaración de variables */
-
+	int valor = 7;
+		
 	/* Código usando condicional if */
+
+	if (valor > 5)
+		printf("El valor %d es mayor que 5\n",valor);
+	else
+		printf("El valor %d  es menor o igual que 5\n",valor);
 }

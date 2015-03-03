@@ -11,11 +11,29 @@
  */
 
 /* Zona para incluir las bibliotecas o las cabeceras */
+#include "utils.h"
+#include <stdio.h>
 
 /* Zona para declarar la funcion estática */
+static int multiplicar_numero_secreto(int numero);
 
 /* Programa Principal */
 void main ()
 {
+	int multi;
+	int n = 8;
 
+	if(es_par(n)) {
+		multi = multiplicar_numero_secreto(n);
+		printf("el resultado de multiplicar %d por el numero " \
+			"secreto es %d\n",n,multi);
+	}
+	else{
+		printf("-1");
+	}
+}
+
+static int multiplicar_numero_secreto(int numero)
+{
+	return numero * 100;
 }
