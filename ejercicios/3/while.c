@@ -15,6 +15,5 @@ void main()
 	/* Código usando while*/
 	while (cadena[len] != '\0')
 		len++;
-
 	printf("la longitud de la cadena es %d \n",len);
 }

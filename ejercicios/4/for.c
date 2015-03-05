@@ -14,6 +14,5 @@ void main()
 
 	/* Código usando condicional while */
 	for (len = 0; cadena[len] != '\0'; len++);
-
 	printf("la longitud de la cadena seria %d\n",len);
 }
